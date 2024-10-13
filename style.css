@@ -226,6 +226,10 @@ header>.wiki-article{
     width: 630px;
 }
 
+.tiktok-embed{
+    border-radius: 20px;
+ border: rgb(32, 32, 32) solid 2px;
+}
 
 /* footer part */
 
