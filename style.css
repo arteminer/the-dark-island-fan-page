@@ -1,0 +1,270 @@
+/* main settings */
+
+@import url('https://fonts.googleapis.com/css2?family=Tai+Heritage+Pro:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body{
+    background-color: #21201B;
+
+    color: #FFFFFF;
+    font-family: "Tai Heritage Pro", serif;
+    font-weight: 400;
+}
+
+a{
+    color: #FFFFFF;
+}
+
+h1{
+    font-weight: 400;
+}
+
+/* scrollbar */
+
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: #292a1a;
+
+    border: solid 2px #3a3b25;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #3a3b25;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+}
+
+/* header part */
+
+header{
+    width: 100%;
+    height: 640px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    background-image: url('images/header-bg.png');
+    background-size: cover;
+    background-position: 50%, -50px;
+}
+
+header>.main-article{
+    width: 75%;
+    height: 70%;
+
+    display: flex;
+    align-items: center;
+}
+
+header>.main-article>.text-article{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+header>.main-article>.text-article>h1{
+    font-size: 76px;
+}
+
+header>.main-article>.text-article>p{
+    width: 630px;
+    font-size: 24px;
+}
+
+header>.wiki-article{
+    margin-left: auto;
+    margin-right: 14vw;
+
+
+    font-size: 32px;
+}
+
+/* discord part */
+
+.discord-article{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 75%;
+
+    margin-top: 165px;
+}
+
+.discord-article>.text-btn-article>.text-article>h1{
+    font-size: 55px;
+}
+
+.discord-article>.text-btn-article>.text-article>p{
+    font-size: 24px;
+    width: 630px;
+}
+
+.discord-article>.logo-article{
+    background-image: url(images/discord-icon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    width: 272px;
+    height: 272px;
+}
+
+.discord-article>.text-btn-article>.btn-article{
+    margin-top: 35px;
+
+    width: 630px;
+    height: 50px;
+
+    background-color: #21201B;
+    border: solid white 3px;
+
+    font-size: 32px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.discord-article>.text-btn-article>.btn-article:hover{
+    cursor: pointer;
+    background-color: #464644;
+}
+
+/* patreon part */
+
+.patreon-article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 165px;
+
+    width: 100%;
+    height: 630px;
+
+    background: linear-gradient(95deg, rgba(235, 98, 79, 0.4) 40%, #052d49 120%);
+}
+
+.patreon-article>.sub-patreon-article{
+    width: 75%;
+}
+
+.patreon-article>.sub-patreon-article>.text-btn-article>.text-article>h1{
+    font-size: 55px;
+}
+.patreon-article>.sub-patreon-article>.text-btn-article>.text-article>p{
+    font-size: 24px;
+    width: 600px;
+}
+
+.patreon-article>.sub-patreon-article>.text-btn-article>.btn-article{
+    margin-top: 35px;
+
+    width: 630px;
+    height: 50px;
+
+    background-color: #21201B;
+    border: solid white 3px;
+
+    font-size: 32px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.patreon-article>.sub-patreon-article>.text-btn-article>.btn-article:hover{
+    cursor: pointer;
+    background-color: #464644;
+}
+
+.patreon-article>.sub-patreon-article>.logo-article{
+    background-image: url(images/patreon-icon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    width: 272px;
+    height: 272px;
+}
+
+.sub-patreon-article{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* tiktok part */
+
+.tiktok-article{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 75%;
+
+    margin-top: 165px;
+}
+
+.tiktok-article>.text-article>h1{
+    font-size: 55px;
+}
+
+.tiktok-article>.text-article>p{
+    font-size: 24px;
+    width: 630px;
+}
+
+
+/* footer part */
+
+footer{
+    margin-top: 175px;
+
+    width: 100%;
+    height: 300px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-image: url(images/footer-bg.png);
+    background-size: cover;
+    background-position: center;
+}
+
+footer>.main-article{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    height: 100%;
+    width: 75%;
+}
+
+footer .bottom-article{
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+footer h1{
+    font-size: 36px;
+}
+
+footer p{
+    font-size: 16px;
+    width: 600px;
+}
