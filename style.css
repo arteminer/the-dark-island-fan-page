@@ -281,7 +281,7 @@ footer p{
         margin-top: 100px;
     }
 
-    .discord-article,.tiktok-article,.header .main-article{
+    .discord-article,.tiktok-article,header .main-article{
         width: 85%;
     }
 
@@ -307,22 +307,7 @@ footer p{
         width: 70%;
     }
 
-    .tiktok-article .btn-article{
-        margin-top: 35px;
-
-        width: 70%;
-
-        height: 50px;
-
-        background-color: #21201B;
-        border: solid white 3px;
-
-        font-size: 32px;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+    
 
     .btn-article{
         height: 45px !important;
@@ -361,5 +346,22 @@ footer p{
 
     .footage-article{
         display: none;
+    }
+
+    .tiktok-article .btn-article{
+        margin-top: 35px;
+
+        width: 70%;
+
+        height: 50px;
+
+        background-color: #21201B;
+        border: solid white 3px;
+
+        font-size: 32px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
