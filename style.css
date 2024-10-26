@@ -79,7 +79,7 @@ header>.main-article>.text-article>h1{
 }
 
 header>.main-article>.text-article>p{
-    width: 630px;
+    width: 50%;
     font-size: 24px;
 }
 
@@ -91,16 +91,25 @@ header>.wiki-article{
     font-size: 32px;
 }
 
+/* article defolt settings */
+
+.article{
+    display: flex;
+    align-items: center;
+
+    margin-top: 165px;
+}
+
+.logo-article{
+    background-position: center;
+}
+
 /* discord part */
 
 .discord-article{
-    display: flex;
-    align-items: center;
     justify-content: space-between;
 
     width: 75%;
-
-    margin-top: 165px;
 }
 
 .discord-article>.text-btn-article>.text-article>h1{
@@ -109,7 +118,7 @@ header>.wiki-article{
 
 .discord-article>.text-btn-article>.text-article>p{
     font-size: 24px;
-    width: 630px;
+    width: 70%;
 }
 
 .discord-article>.logo-article{
@@ -124,7 +133,8 @@ header>.wiki-article{
 .discord-article>.text-btn-article>.btn-article{
     margin-top: 35px;
 
-    width: 630px;
+    width: 70%;
+
     height: 50px;
 
     background-color: #21201B;
@@ -137,19 +147,10 @@ header>.wiki-article{
     align-items: center;
 }
 
-.discord-article>.text-btn-article>.btn-article:hover{
-    cursor: pointer;
-    background-color: #464644;
-}
-
 /* patreon part */
 
 .patreon-article{
-    display: flex;
     justify-content: center;
-    align-items: center;
-
-    margin-top: 165px;
 
     width: 100%;
     height: 630px;
@@ -166,13 +167,14 @@ header>.wiki-article{
 }
 .patreon-article>.sub-patreon-article>.text-btn-article>.text-article>p{
     font-size: 24px;
-    width: 600px;
+    width: 70%;
 }
 
 .patreon-article>.sub-patreon-article>.text-btn-article>.btn-article{
     margin-top: 35px;
 
-    width: 630px;
+    width: 70%;
+
     height: 50px;
 
     background-color: #21201B;
@@ -183,11 +185,6 @@ header>.wiki-article{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.patreon-article>.sub-patreon-article>.text-btn-article>.btn-article:hover{
-    cursor: pointer;
-    background-color: #464644;
 }
 
 .patreon-article>.sub-patreon-article>.logo-article{
@@ -213,22 +210,28 @@ header>.wiki-article{
     justify-content: space-between;
 
     width: 75%;
-
-    margin-top: 165px;
 }
 
-.tiktok-article>.text-article>h1{
+.tiktok-article>.text-btn-article>.text-article>h1{
     font-size: 55px;
 }
 
-.tiktok-article>.text-article>p{
+.tiktok-article>.text-btn-article>.text-article>p{
     font-size: 24px;
-    width: 630px;
+    width: 70%;
+}
+
+.tiktok-article .btn-article{
+    display: none;
 }
 
 .tiktok-embed{
     border-radius: 20px;
- border: rgb(32, 32, 32) solid 2px;
+    border: rgb(32, 32, 32) solid 2px;
+}
+
+.footage-article{
+    width: 390px;
 }
 
 /* footer part */
@@ -237,7 +240,7 @@ footer{
     margin-top: 175px;
 
     width: 100%;
-    height: 300px;
+    height: 250px;
 
     display: flex;
     justify-content: center;
@@ -271,4 +274,92 @@ footer h1{
 footer p{
     font-size: 16px;
     width: 600px;
+}
+
+@media (max-width:740px) {
+    .article{
+        margin-top: 100px;
+    }
+
+    .discord-article,.tiktok-article,.header .main-article{
+        width: 85%;
+    }
+
+    .text-article h1{
+        font-size: 36px !important;
+    }
+
+    .text-article p{
+        font-size: 17px !important;
+        width: 101% !important;
+    }
+
+    footer .text-article p{
+        width: 100% !important;
+        font-size: 12px !important;
+    }
+
+    header{
+        height: 500px;
+    }
+
+    header .text-article p{
+        width: 70%;
+    }
+
+    .tiktok-article .btn-article{
+        margin-top: 35px;
+
+        width: 70%;
+
+        height: 50px;
+
+        background-color: #21201B;
+        border: solid white 3px;
+
+        font-size: 32px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn-article{
+        height: 45px !important;
+        width: 100% !important;
+        font-size: 20px !important;
+    }
+
+    .btn-article:active{
+        cursor: pointer;
+        background-color: #464644 !important;
+    }
+
+    .patreon-article{
+        height: 450px;
+    }
+
+}
+
+@media (max-width:540px) {
+    header p{
+        width: 110% !important;
+    }
+}
+
+@media (min-width:740px) {
+    .btn-article:hover{
+        cursor: pointer;
+        background-color: #464644 !important;
+    }
+}
+
+@media (max-width:1140px) {
+    .logo-article{
+        display: none;
+    }
+
+    .footage-article{
+        display: none;
+    }
 }
