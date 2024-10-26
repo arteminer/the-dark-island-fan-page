@@ -281,7 +281,7 @@ footer p{
         margin-top: 100px;
     }
 
-    .discord-article,.tiktok-article,.sub-patreon-article,header .main-article{
+    .discord-article,.tiktok-article,.sub-patreon-article,header .main-article, footer .main-article{
         width: 85% !important;
     }
 
