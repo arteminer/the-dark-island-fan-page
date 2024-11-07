@@ -18,9 +18,12 @@ let discordBtn = document.querySelector('.discord-btn');
 let patreonBtn = document.querySelector('.patreon-btn');
 let tiktokBtn = document.querySelector('.tiktok-btn');
 
+setTimeout(
 discordBtn.addEventListener('click', function() {
     window.location = 'https://discord.gg/thedarkisland';
-});
+}), 2000)
+
+
 patreonBtn.addEventListener('click', function() {
     window.location = 'https://www.patreon.com/darkislandgame';
 });
